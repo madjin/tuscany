@@ -1,0 +1,26 @@
+{
+  "templates": {
+    "janus.comms.panel": "./comms.html",
+    "janus.comms.status": "./status.html",
+    "janus.comms.userlist": "./userlist.html",
+    "janus.comms.voip": "./voip.html",
+    "janus.comms.chat": "./chat.html",
+    "janus.comms.chat_message": "./chat_message.html"
+  },
+  "scripts": [
+    "./external/naf-shim.js",
+    "./comms.js",
+    "./voip.js"
+  ],
+  "css": [
+    "./comms.css",
+    "./voip.css"
+  ],
+  "components": [
+    "janus-comms-panel",
+    "janus-comms-status",
+    "janus-comms-userlist",
+    "janus-comms-voip",
+    "janus-comms-chat"
+  ]
+}

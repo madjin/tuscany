@@ -1,0 +1,87 @@
+<FireBoxRoom>
+  <Assets>
+    <assetobject id="monkey-nomaterial-flat-obj" src="models/monkey-nomaterial-flat.obj" />
+    <assetobject id="monkey-nomaterial-flat-dae" src="models/monkey-nomaterial-flat.dae" />
+    <assetobject id="monkey-nomaterial-flat-fbx" src="models/monkey-nomaterial-flat.fbx" />
+    <assetobject id="monkey-nomaterial-smooth-obj" src="models/monkey-nomaterial-smooth.obj" />
+    <assetobject id="monkey-nomaterial-smooth-dae" src="models/monkey-nomaterial-smooth.dae" />
+    <assetobject id="monkey-nomaterial-smooth-fbx" src="models/monkey-nomaterial-smooth.fbx" />
+    <assetobject id="monkey-material-flat-obj" src="models/monkey-material-flat.obj" mtl="models/monkey-material-flat.mtl" />
+    <assetobject id="monkey-material-flat-dae" src="models/monkey-material-flat.dae" />
+    <assetobject id="monkey-material-flat-fbx" src="models/monkey-material-flat.fbx" />
+    <assetobject id="monkey-material-flat-ascii-fbx" src="models/monkey-material-flat-ascii.fbx" />
+    <assetobject id="monkey-material-smooth-obj" src="models/monkey-material-smooth.obj" mtl="models/monkey-material-smooth.mtl" />
+    <assetobject id="monkey-material-smooth-dae" src="models/monkey-material-smooth.dae" />
+    <assetobject id="monkey-material-smooth-fbx" src="models/monkey-material-smooth.fbx" />
+
+    <assetobject id="bunny-ply" src="models/bunny.ply" />
+    <assetobject id="pointcloud-ascii-ply" src="models/pointcloud-ascii.ply" />
+
+    <assetobject id="vrml" src="models/vrmltest.wrl" />
+
+    <AssetObject id="gltf-monster" src="https://threejs.org/examples/models/gltf/monster/glTF-MaterialsCommon/monster.gltf" />
+    <AssetObject id="gltf-duck" src="https://threejs.org/examples/models/gltf/duck/glTF-MaterialsCommon/duck.gltf" />
+    <AssetObject id="gltf-guy" src="https://threejs.org/examples/models/gltf/CesiumMan/glTF-MaterialsCommon/Cesium_Man.gltf" />
+    <AssetObject id="gltf-truck" src="https://threejs.org/examples/models/gltf/CesiumMilkTruck/glTF-MaterialsCommon/CesiumMilkTruck.gltf" />
+
+    <AssetObject id="james-avatar-fbx" src="http://assets.metacade.com/james/animated/james_avatar.fbx" />
+
+
+    <assetimage id="texture-diffuse" src="models/metal07-diffuse.png" />
+    <assetimage id="texture-normal" src="models/metal07-normal.png" />
+    <assetimage id="texture-specular" src="models/metal07-specular.png" />
+  </Assets>
+  <Room use_local_asset="room5" pos="-.75 2 8.5" zdir="0 0 -1">
+
+    <text pos="0 2.5 -4" scale="1 1 1" col="0 1 1">glTF</text>
+    <text pos="0 2.5 -2" scale="1 1 1" col="1 0 1">VRML</text>
+    <text pos="0 2.5 0" scale="1 1 1" col="0 0 1">FBX</text>
+    <text pos="0 2.5 2" scale="1 1 1" col="0 1 0">DAE</text>
+    <text pos="0 2.5 4" scale="1 1 1" col="1 0 0">OBJ</text>
+    <text pos="0 2.5 6" scale="1 1 1" col="1 1 0">PLY</text>
+
+    <object id="cube" pos="-1 0 -4" scale="24 .1 .1" col="0 1 1" />
+    <object id="cube" pos="-1 0 -2" scale="24 .1 .1" col="1 0 1" />
+    <object id="cube" pos="-1 0 0" scale="24 .1 .1" col="0 0 1" />
+    <object id="cube" pos="-1 0 2" scale="24 .1 .1" col="0 1 0" />
+    <object id="cube" pos="-1 0 4" scale="24 .1 .1" col="1 0 0" />
+    <object id="cube" pos="-1 0 6" scale="24 .1 .1" col="1 1 0" />
+
+    <!-- text pos="0 2.5 4" scale="1 1 1" fwd="1 0 0" right="0 0 1">No material / flat shaded</text -->
+
+    <object id="monkey-nomaterial-flat-obj" pos="4 1 4" rotate_deg_per_sec="10" />
+    <object id="monkey-nomaterial-flat-dae" pos="4 1 2" rotate_deg_per_sec="10" />
+    <object id="monkey-nomaterial-flat-fbx" pos="4 1 0" rotate_deg_per_sec="10" scale=".01 .01 .01" />
+
+    <object id="monkey-nomaterial-smooth-obj" pos="1.5 1 4" rotate_deg_per_sec="10" />
+    <object id="monkey-nomaterial-smooth-dae" pos="1.5 1 2" rotate_deg_per_sec="10" />
+    <object id="monkey-nomaterial-smooth-fbx" pos="1.5 1 0" rotate_deg_per_sec="10" scale=".01 .01 .01" />
+
+    <object id="monkey-material-flat-obj" pos="-1.5 1 4" rotate_deg_per_sec="10" />
+    <object id="monkey-material-flat-dae" pos="-1.5 1 2" rotate_deg_per_sec="10" />
+    <object id="monkey-material-flat-ascii-fbx" pos="-1.5 1 0" rotate_deg_per_sec="10" scale=".01 .01 .01" />
+
+    <object id="monkey-material-smooth-obj" pos="-4 1 4" rotate_deg_per_sec="10" />
+    <object id="monkey-material-smooth-dae" pos="-4 1 2" rotate_deg_per_sec="10" />
+    <object id="monkey-material-smooth-fbx" pos="-4 1 0" rotate_deg_per_sec="10" scale=".01 .01 .01" />
+
+    <object id="james-avatar-fbx" pos="-6.5 1 0" rotate_deg_per_sec="10" />
+
+    <object id="bunny-ply" pos="-1 1 6" scale="5 5 5" rotate_deg_per_sec="10" />
+    <object id="pointcloud-ascii-ply" pos="1 1 6" scale="2 2 2" rotate_deg_per_sec="10" />
+
+    <object id="vrml" pos="0 1 -2" scale=".5 .5 .5" rotate_deg_per_sec="10" />
+
+    <object id="gltf-duck" pos="-3 1 -4" scale=".5 .5 .5" rotate_deg_per_sec="10" />
+    <object id="gltf-monster" pos="-1 1 -4" scale=".05 .05 .05" rotate_deg_per_sec="10" />
+    <object id="gltf-guy" pos="1 1 -4" scale=".5 .5 .5" rotate_deg_per_sec="10" />
+    <object id="gltf-truck" pos="3 1 -4" scale=".5 .5 .5" rotate_deg_per_sec="10" />
+
+
+    <light pos="6 6 6" light_intensity="100" col="1 1 0" />
+    <light pos="-6 6 6" light_intensity="100" col="1 1 0" />
+    <light pos="6 6 -6" light_intensity="100" col="1 1 0" />
+    <light pos="-6 6 -6" light_intensity="100" col="1 1 0" />
+
+  </Room>
+</FireBoxRoom>
