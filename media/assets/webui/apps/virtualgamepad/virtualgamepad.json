@@ -1,0 +1,11 @@
+{
+  "templates": {
+  },
+  "scripts":  ["./virtualgamepad.js"],
+  "css":      ["./virtualgamepad.css"],
+  "components": [
+    "janus-controls-gamepad"
+  ]
+}
+
+
