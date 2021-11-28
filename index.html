@@ -16,8 +16,12 @@
   <AssetImage id="sky_back" src="skybox/Eveningback.jpg" tex_clamp="true"/>
   <AssetImage id="fireplace" src="fireplace.gif"/>
   <AssetImage id="flame" src="flame.png"/>
+  <AssetImage id="particle" src="particle.png"/>
+  <AssetSound id="environment_sfx" src="sfx/tuscany.mp3" />
+  <AssetSound id="fireplace_sfx" src="sfx/fireplace.mp3" />
+  <AssetSound id="waterfountain_sfx" src="sfx/waterfountain.mp3" />
  </Assets>
- <Room pbr="true" gravity="-9.8" ambient="0.4 0.4 0.4" pos="-50 7.7 58" skybox_back_id="sky_back" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_right_id="sky_right" skybox_up_id="sky_up" use_local_asset="room_plane" visible="false" walk_speed="1.2" xdir="-1 0 0" zdir="0 0 -1">
+ <Room pbr="true" gravity="-9.8" ambient="0.4 0.4 0.4" pos="-50 7.4 58" skybox_back_id="sky_back" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_right_id="sky_right" skybox_up_id="sky_up" use_local_asset="room_plane" visible="false" walk_speed="1.2" xdir="-1 0 0" zdir="0 0 -1" shadows="true">
   <Object id="tuscany" scale="10 10 10" collision_id="tuscany_collision" />
   <Object collision_id="plane" cull_face="none" id="plane" image_id="fireplace" js_id="144-1504410440" lighting="false" pos="-50.689999 8.53 45.5" xdir="0.031971 -0 -0.999489" ydir="0.071158 0.997463 0.002276" zdir="0.996953 -0.071194 0.03189"/>
   <Image id="flame" js_id="19-1504405346" lighting="false" pos="-46.129997 9.8 51.449997" scale="0.07 0.07 0.7" xdir="-1 0 -0.000001" zdir="0.000001 0 -1"/>
@@ -32,7 +36,12 @@
   <Light col="#855600" js_id="1504404409" light_cone_angle="0" light_cone_exponent="1" light_intensity="10" light_range="5.5" pos="-50.200001 10 50.600002" xdir="0.03199 0 -0.999488" ydir="0.99945 0.00873 0.031989" zdir="0.008726 -0.999962 0.000279"/>
   <Light col="#855600" js_id="6-1504404444" light_cone_angle="0" light_cone_exponent="1" light_intensity="8" light_range="5.5" pos="-46 10.3 51.200001" xdir="-0.539753 0 -0.841824" ydir="0.84178 0.010184 -0.539725" zdir="0.008573 -0.999948 -0.005497"/>
   <Light col="#855600" js_id="12-1504404496" light_cone_angle="0" light_cone_exponent="1" light_intensity="8" light_range="5.5" pos="-42.100002 10.400001 51.099998" xdir="-0.999999 0 0.001457" ydir="-0.001456 0.034906 -0.99939" zdir="-0.000051 -0.999391 -0.034906"/>
-  <Light col="#ffa500" js_id="149-1504410499" light_cone_angle="0" light_cone_exponent="1" light_intensity="9" light_range="8.5" pos="-50.299999 8.400001 45.5" xdir="0.281201 0 -0.959649" ydir="0.955232 -0.095835 0.279907" zdir="-0.091968 -0.995397 -0.026949"/>
+  <Light col="#ffa500" js_id="149-1504410499" light_cone_angle="0" light_cone_exponent="1" light_intensity="9" light_range="8.5" light_shadow="true" pos="-50.299999 8.400001 45.5" xdir="0.281201 0 -0.959649" ydir="0.955232 -0.095835 0.279907" zdir="-0.091968 -0.995397 -0.026949"/>
+  <Sound id="waterfountain_sfx" pos="-44 7 58.51" rect="-100 -50 100 50" loop="true" />
+  <Sound id="fireplace_sfx" pos="-50.5 7.8 45.52" rect="-100 -50 100 50" loop="true" gain="2" />
+  <Sound id="environment_sfx" pos="-50 16 60" rect="-200 -80 200 80" loop="true" gain="12" /> 
+  <Sound id="environment_sfx" pos="-50 16 5" rect="-200 -80 200 80" loop="true" gain="15" /> 
+  <Particle col="white" count="1000" duration="15" id="1140" image_id="particle" lighting="false" loop="true" pos="-10 7.7 10" rand_accel="0.1 0.1 0.1" rand_pos="-60 3.9 70" rand_vel="0.1 0.1 0.1" rate="50" scale="0.1 0.1 0.1" vel="-0.1 -0.1 -0.1"/>
  </Room>
 </FireBoxRoom>
 <script src="janusweb.js"></script>
