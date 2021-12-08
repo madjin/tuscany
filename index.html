@@ -21,7 +21,7 @@
   <AssetSound id="fireplace_sfx" src="sfx/fireplace.mp3" />
   <AssetSound id="waterfountain_sfx" src="sfx/waterfountain.mp3" />
  </Assets>
- <Room pbr="true" gravity="-9.8" ambient="0.4 0.4 0.4" pos="-50 7.4 58" skybox_back_id="sky_back" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_right_id="sky_right" skybox_up_id="sky_up" use_local_asset="room_plane" visible="false" walk_speed="1.2" xdir="-1 0 0" zdir="0 0 -1" shadows="true">
+ <Room pbr="true" gravity="-9.8" flying="false" ambient="0.4 0.4 0.4" pos="-50 7.4 58" skybox_back_id="sky_back" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_right_id="sky_right" skybox_up_id="sky_up" use_local_asset="room_plane" visible="false" walk_speed="1.2" xdir="-1 0 0" zdir="0 0 -1" shadows="true">
   <Object id="tuscany" scale="10 10 10" collision_id="tuscany_collision" />
   <Object collision_id="plane" cull_face="none" id="plane" image_id="fireplace" js_id="144-1504410440" lighting="false" pos="-50.689999 8.53 45.5" xdir="0.031971 -0 -0.999489" ydir="0.071158 0.997463 0.002276" zdir="0.996953 -0.071194 0.03189"/>
   <Image id="flame" js_id="19-1504405346" lighting="false" pos="-46.129997 9.8 51.449997" scale="0.07 0.07 0.7" xdir="-1 0 -0.000001" zdir="0.000001 0 -1"/>
@@ -44,7 +44,7 @@
   <Particle col="white" count="1000" duration="15" id="1140" image_id="particle" lighting="false" loop="true" pos="-10 7.7 10" rand_accel="0.1 0.1 0.1" rand_pos="-60 3.9 70" rand_vel="0.1 0.1 0.1" rate="50" scale="0.1 0.1 0.1" vel="-0.1 -0.1 -0.1"/>
  </Room>
 </FireBoxRoom>
-<script src="janusweb.js"></script>
+<script src="https://web.janusxr.org/1.5.33/janusweb.js"></script>
 <script>elation.janusweb.init({url: document.location.href})</script>
 </body>
 </html>
