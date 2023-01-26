@@ -6,6 +6,10 @@ WebXR version of the infamous Tuscany demo from Oculus Rift DK1 days. Forked fro
 
 - Demo: https://madjin.github.io/tuscany/
 - Mozilla Hubs / Spoke: https://hubs.mozilla.com/scenes/Khp393P
+- Newest: https://hyperfy.io/tuscany
+
+![image](https://user-images.githubusercontent.com/32600939/214921172-1c070aad-9dcc-4645-9e09-def94a05a495.png)
+
 
 (WIP: Still has some bugs)
 
